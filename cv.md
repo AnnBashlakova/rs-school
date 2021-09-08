@@ -6,7 +6,7 @@
 *phone: +79036445247
 *GitHub: https://github.com/AnnBashlakova 
 ==========================================
-I work as an engineer in an energy company, I am interested in web development.On my own time I take online courses on frontend development. I want to take a js-frontend course at The Rolling Scopes School and imagine to  find a job in the frontend-dev in future.
+I work as an engineer in an energy company, I am interested in web development.On my own time I take online courses on frontend development. I want to take a js-frontend course at *The Rolling Scopes School* and imagine to  find a job in the frontend-dev in future.
 ==========================================
 ##**Skills**
 -Html,CSS,Git (Udemy courses);
