@@ -6,87 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
-<div class="wrapper">
     <body class="page">
-        <header class="header">
-            <nav class="menu">
-                <div class="menu_content">
-                    <ul class="list">
-                        <li class="item">Contacts</a></li>
-                        <li class="item">About me</li>
-                        <li class="item">Skills</li>
-                        <li class="item">Education</li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-       
-        <main>
-            <aside>
-                <h1>Anna Bashlakova</h1>
-                <div class="cv">Future frontend developer</div>
-              <img src="./img/VnANdA9JtMg.jpg" alt="photo" class="photo"> 
-            <div class="information">
-                <div class="contacts">
-                    <h2>Contacts</h2>
-                <ul>
-                    <li class="contacts">location: Bryansk,Russia</li>
-                    <li class="contacts"><a href="mailto:anna47297@gmail.com">anna47297@gmail.com</a></li>
-                    <li class="contacts"><a href="tel:+79036445247">+79036445247</a></li>
-                    <li class="contacts"><a href="https://vk.com/bashlakova">vk</a></li>
-                    <li class="contacts"><a href="https://github.com/AnnBashlakova">GitHub</a></li>
-                </ul>
-                </div>
-                <div class="skills">
-                    <h2>Skills</h2>
-                <ul>
-                    <li class="skills">Html,CSS,Git (Udemy courses)</li>
-                    <li class="skills">JS (learn.javascript.ru...right now process of learning)</li>
-                    <li class="skills">QA masterclass( ITea)</li>
-                </ul>
-                </div>
-            </div>
-            <h2>English</h2>
-            <div class="engl">A1/A2 (in process)</div>
-            <img src="./img/unnamed.png" alt="english" class="english">
-            </aside>
-    
-    
-            <div class="myself">
-                
-                    <h3>About me</h3>
-                    <p>  I work as an engineer in an energy company, I am interested in web development. On my own time I take online courses on frontend development. I want to take a js-frontend course at The Rolling Scopes School and imagine to  find a job in the frontend-developer in future.</p>
-                    <div class="education">
-                        <h3>Education</h3>
+        <div class="wrapper">
+            <header class="header">
+                <nav class="menu">
+                    <div class="menu_content">
+                        <ul class="list">
+                            <li class="item"><a href="#contacts">Contacts</a></li>
+                            <li class="item"><a href="#myself">About me</a></li>
+                            <li class="item"><a href="#skills">Skills</a></li>
+                            <li class="item"><a href="#education">Education</a></li>
+                        </ul>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </header>
+           
+            <main>
+                <aside>
+                    <div class="one">
+                        <h1>Anna Bashlakova</h1>
+                    <div class="cv">Future frontend developer</div>
+                  <img src="./img/VnANdA9JtMg.jpg" alt="photo" class="photo"> 
+                <div class="information">
+                    <div class="contacts" id="contacts">
+                        <h2>Contacts</h2>
                     <ul>
-                        <li class="education">Bryansk State Technical University, Power engineering</li>
-                        <li class="education"><a href="https://www.udemy.com/course/webdeveloper/?src=sac&kw=web"></a>Udemy courses (web-developer, basic js)</li>
+                        <li class="contacts">location: Bryansk,Russia</li>
+                        <li class="contacts"><a href="mailto:anna47297@gmail.com">anna47297@gmail.com</a></li>
+                        <li class="contacts"><a href="tel:+79036445247">+79036445247</a></li>
+                        <li class="contacts"><a href="https://vk.com/bashlakova">vk</a></li>
+                        <li class="contacts"><a href="https://github.com/AnnBashlakova">GitHub</a></li>
                     </ul>
                     </div>
-             </div> 
-                    
-            
-        </main>
-    
-        <footer>
-            <div class="footer_item">
-                <div class="footer_item_git">
-                    <a href="https://github.com/AnnBashlakova" class="foter_git"><img class="git_footer" src="./img/footer-icon-github.svg" alt="mygit"></a>
+                    <div class="skills" id="skills">
+                        <h2>Skills</h2>
+                    <ul>
+                        <li class="skills">Html,CSS,Git (Udemy courses)</li>
+                        <li class="skills">JS (learn.javascript.ru...right now process of learning)</li>
+                        <li class="skills">QA masterclass( ITea)</li>
+                    </ul>
+                    </div>
                 </div>
-    
-                <div class="footer_item_year">
-                    <span>2021</span>
-                </div>
-    
-                <div class="footer_item_rss">
-                    <a href="https://rs.school/js/" class="footer_rss"><img class="rss_footer" src="./img/footer-icon-rsschool.svg" alt="rssschool"></a>
-                </div>
-            </div>
-        </footer>
+                        <h2>English</h2>
+                        <div class="engl">A1/A2 (in process)</div>
+                        <img src="./img/unnamed.png" alt="english" class="english">
+                    </div>    
+                </aside>
         
-</div>
-
-
+                <div class="myself" id="myself">
+                        <h3>About me</h3>
+                        <p>  I work as an engineer in an energy company, I am interested in web development. On my own time I take online courses on frontend development. I want to take a js-frontend course at The Rolling Scopes School and imagine to  find a job in the frontend-developer in future.</p>
+                        <div class="education" id="education">
+                            <h3>Education</h3>
+                        <ul>
+                            <li class="education">Bryansk State Technical University, Power engineering</li>
+                            <li class="education"><a href="https://www.udemy.com/course/webdeveloper/?src=sac&kw=web"></a>Udemy courses (web-developer, basic js)</li>
+                        </ul>
+                        </div>
+                        <div class="example">
+                            <h3>Example code</h3>
+                             <p>I am just learning so upload the task from <a href="https://www.codewars.com/kata/555086d53eac039a2a000083">Codewars</a> as an example:  </p> 
+                            
+                                <div class="task">
+                                    "Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
+                                     Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't."
+                                </div>
+                            <pre><code class="html">function lovefunc(flower1, flower2){
+                                                    let C = ((flower1 + flower2)%2) ;
+                                                    if (C % 2 > 0)
+                                                    {return true}
+                                                    return false
+                                                    }   
+                               </code></pre>
+                        </div>
+                 </div> 
+            </main>
+    
+            <footer>
+                    <div class="footer_item_git">
+                        <a href="https://github.com/AnnBashlakova" class="foter_git"><img class="git_footer" src="./img/footer-icon-github.svg" alt="mygit"></a>
+                    </div>
+        
+                    <div class="footer_item_year">
+                        2021
+                    </div>
+        
+                    <div class="footer_item_rss">
+                        <a href="https://rs.school/js/" class="footer_rss"><img class="rss_footer" src="./img/footer-icon-rsschool.svg" alt="rssschool"></a>
+                    </div>
+            </footer> 
+    </div>
+    <script src="..//rsschool-cv/"></script>
 </body>
 </html>

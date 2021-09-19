@@ -5,17 +5,21 @@
     font-family:  'Libre Baskerville', serif
 
 .wrapper
+    min-height: 100%
+    display: flex
+    flex-direction: column
     margin: 0 auto
-    border-right: 1px solid grey
 
 h1
     margin-top: 20px
     text-align: center
     text-shadow: hoff voff blur #000
     font-size: 32px
+    color: orange
 
 h2, h3
     text-align: center
+    color: orange
 
 h3
     font-size: 30px
@@ -23,10 +27,10 @@ h3
 
 body
     max-width: 1200px
+    min-height: 100%
     background: #AFEEEE
-    padding-right: 20px
-    padding-left: 20px
-    padding-top: 40px
+    // padding-right: 20px
+    // padding-left: 20px
     box-sizing: border-box
     scroll-behavior: smooth
     margin: 0
@@ -38,11 +42,14 @@ body
 
 .header
     position: relative
-    border: 1px solid rgba(34, 60, 80, 0.2)
+    // border: 1px solid rgba(34, 60, 80, 0.2)
     background: #FFA500
     vertical-align: center
     font-size: 21px
+
     
+.hamburger
+    display: none
 
 .list
     display: flex
@@ -50,11 +57,13 @@ body
     align-content: center
     padding: 0
     list-style-type: none
+    margin-top: 0px
 
 main
     display: flex
     // max-width: 1200px
     max-width: 100%
+    flex: 1 1 auto
 
 
 aside
@@ -65,7 +74,7 @@ a
     color: black
     Text-decoration: none
     &:hover
-        color: orange
+        color:  #C0C0C0
 
 .contacts
     line-height: 40px  
@@ -87,16 +96,17 @@ a
     display: block
     width: 100%
 .english
+    transform: translate(50%, 16%)
     width: 50%
-    padding-left: 100px
-    margin: 10px 0 20px
 
 .myself
     width: 60%
     padding: 0 60px
-    margin: 25px
+    margin-left: 25px
     font-size: 20px
     line-height: 50px
+    background: #B0E0E6
+
 
 p
     text-align: justify
@@ -105,35 +115,227 @@ p
 .aboutme
     font-weight: 600px
 
+code
+        font-size: 15px
+
+.task
+    font-size: 16px
+    line-height: 18px
+    text-align: justify
+
 
 footer
-    height: 100px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: auto
     background:#C0C0C0
     
-.footer_item
-    display: flex
-    justify-content: space-between
-    height: 80%
-    width: 80%
-    padding-bottom: -10px
-    margin-left: 115px
-    background: #C0C0C0
-    text-align: centr
-
 
 
 .git_footer
     width: 100px
     height: 92px
-    margin-top: 8px
 
 .rss_footer
     width: 200px
     height: 100px
 
 .footer_item_year
-    margin-top: 40px
     font-size: 30px
+
+
+@media (max-width: 930px)
+    .myself
+        padding: 0px
+        margin: 20px
+
+    .education
+        font-size: 15px
+        line-height: 19px
+    .html
+        font-size: 13px
+
+@media (max-width: 845px)
+    .header
+        font-size: 16px
+    p
+        font-size: 16px
+        line-height: 19px
+    h1, h2, h3
+        font-size: 20px
+    code
+        font-size: 15px
+    .contacts, .skills, .english
+        font-size: 15px
+
+    .english
+        transform: translate(115%, 2%)
+        width: 30%
+
+    .git_footer
+        width: 100px
+        height: 80px
+
+
+    .rss_footer
+        width: 150px
+
+    .footer_item_year
+        font-size: 20px
+
+@media (max-width: 760px)
+    body
+        padding: 0px
+        
+
+    .header
+        font-size: 13px
+    p
+        font-size: 13px
+        line-height: 16px
+    .cv
+        font-size: 10px
+    .task, .education
+        font-size: 13px
+
+    .education
+        line-height: 20px
+    h1, h2, h3
+        font-size: 16px
+    code
+        font-size: 13px
+    .contacts, .skills, .english
+        font-size: 13px
+
+    
+    .git_footer
+        width: 90px
+        height: 70px
+
+
+    .rss_footer
+        width: 150px
+
+    .footer_item_year
+        font-size: 20px
+
+@media (max-width: 600px)
+    // .header
+    //     display: none
+    
+    .list
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(255, 165, 0, .8)
+        z-index: 1
+        &_active
+            left: 0
+        .item
+            padding-right: 0
+            font-size: 20px
+            margin: 10px 0
+    .hamburger
+        display: block
+        position: absolute
+        margin-top: 20px
+        right: 10px
+        // top: 50%
+        transform: translateY(-50%)
+        width: 25px
+        height: 15px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: black
+            margin-bottom: 3px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(-45deg)
+                    
+
+    .wrapper
+        border-right: none
+
+    main
+        display: block
+
+    aside
+        width: 100%
+    
+    h1
+        margin: 0
+        padding: 10px
+        font-size: 23px
+    .cv
+        font-size: 13px
+    h2, h3
+        font-size: 20px
+    .contacts
+        line-height: 40px  
+        font-size: 17px
+
+    .skills
+        line-height: 40px 
+        font-size: 17px
+
+    .engl
+        text-align: center
+        font-size: 17px
+    
+
+    .myself
+        width: 90%
+        margin: 0 20px
+    p
+        line-height: 19px
+        font-size: 15px
+    .education
+        font-size: 15px
+    .html
+        font-size: 12px
+    
+    .footer_item_year
+        font-size: 30px
+
+@media (max-width: 412px)
+    .html
+        font-size: 10px
+    footer
+        flex-flow: column 
+        justify-content: space-around
+        align-items: center
+        padding: 10px 0 
+    
+    .footer_item_year
+        margin-top: 10px
+
+@media (max-width: 342px)
+    .html
+        padding: 0
+        font-size: 9px
+
+
+
+
+
+   
+
 
 
 
